@@ -1,0 +1,16 @@
+[project]
+name = "hotel-booking-cancellation-prediction"
+version = "0.1.0"
+description = "Hotel Revenue Analysis 2024 with PySpark"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.5",
+    "numpy>=2.2.6",
+    "pandas>=2.3.1",
+    "plotly>=6.3.0",
+    "pyspark>=4.0.0",
+    "requests>=2.32.4",
+    "seaborn>=0.13.2",
+]
