@@ -1,13 +1,9 @@
-import logging
 import shutil
 from pathlib import Path
-from config import LOG_LEVEL
+from src.utils import get_logger
 
-# Configure logging
-logging.basicConfig(
-    level=LOG_LEVEL, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-)
-logger = logging.getLogger(__name__)
+
+logger = get_logger(__name__)
 
 # Constants
 PROCESSED_FOLDER = "data/processed"

@@ -1,22 +1,16 @@
 from pathlib import Path
 import os
-import logging
 from config import (
-    LOG_LEVEL,
     KAGGLE_DATASET_NAME,
     KAGGLE_DATASET_ID,
     GIST_RAW_URL,
     DATASET_SOURCE,
 )
 from kaggle.api.kaggle_api_extended import KaggleApi
+from src.utils import get_logger
 
-# Configure logging
-logging.basicConfig(
-    level=LOG_LEVEL, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-)
 
-# Get the logger
-logger = logging.getLogger(__name__)
+logger = get_logger(__name__)
 
 
 class DatasetDownloader:
@@ -86,7 +80,7 @@ class DatasetDownloader:
             logger.info(f"Dataset downloaded from Gist to: {dataset_path}")
             return True
 
-        except Exception as e:
+        except requests.RequestException as e:
             logger.error(f"Error downloading dataset from Gist: {e}")
             logger.info("You can manually download it from:")
             logger.info(GIST_RAW_URL)

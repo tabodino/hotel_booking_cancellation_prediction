@@ -5,15 +5,11 @@ from pathlib import Path
 from dataset_downloader import DatasetDownloader
 from spark_file_manager import SparkFileManager
 from data_transformer import DataTransformer
-import logging
-from config import LOG_LEVEL, KAGGLE_DATASET_NAME
+from config import KAGGLE_DATASET_NAME
+from src.utils import get_logger
 
 # Configure logging
-logging.basicConfig(
-    level=LOG_LEVEL, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-)
-
-logger = logging.getLogger(__name__)
+logger = get_logger(__name__)
 
 PROCESSED_FOLDER = "data/processed"
 DEFAULT_TRAIN_RATIO = 0.8

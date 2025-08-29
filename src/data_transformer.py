@@ -2,15 +2,11 @@
 from pyspark.sql import DataFrame
 from pyspark.sql.functions import col, sin, cos, to_date, dayofmonth, month, dayofweek
 from pyspark.ml.feature import StringIndexer
-import logging
 import math
-from config import LOG_LEVEL
+from src.utils import get_logger
 
 # Configure logging
-logging.basicConfig(
-    level=LOG_LEVEL, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-)
-logger = logging.getLogger(__name__)
+logger = get_logger(__name__)
 
 
 CYCLICAL_MONTHS = 12
@@ -73,7 +69,7 @@ class DataTransformer:
                 indexer = StringIndexer(inputCol=var, outputCol=f"{var}_idx")
                 df = indexer.fit(df).transform(df)
                 logger.info(f"Encoded categorical variable: {var}")
-            except Exception as e:
+            except (ValueError, KeyError) as e:
                 logger.error(f"Error encoding {var}: {e}")
 
         return df
