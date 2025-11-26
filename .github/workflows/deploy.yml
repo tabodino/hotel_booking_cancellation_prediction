@@ -1,9 +1,17 @@
 name: Deploy Web Interface to GitHub Pages
 
+permissions:
+  contents: write
+  pages: write
+
 on:
   push:
     branches:
       - main
+
+concurrency:
+  group: "pages-deploy"
+  cancel-in-progress: true
 
 jobs:
   deploy:
