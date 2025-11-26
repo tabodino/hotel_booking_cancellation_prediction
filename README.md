@@ -1,5 +1,7 @@
 # 🏨 Hotel Revenue Analysis 2024 with PySpark
 
+<img src="docs/screenshots/hotel-revenue-2024.webp">
+
 This project uses **PySpark** and **Machine Learning** to analyze factors impacting hotel revenues in 2024.
 
 ## 📋 Problem Statement
@@ -105,6 +107,22 @@ pip install -r requirements.txt
 ```bash
  jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --NotebookApp.token='' --NotebookApp.password=''
 ```
+
+### Scripts
+
+Generate JSON report 
+
+```bash
+python src/hotel_hotel_analysis_export.py
+```
+
+Launch UI dashboard 
+```bash
+cd src/web
+python -m http.server 8000
+```
+
+---
 
 ## 📝 License
 
