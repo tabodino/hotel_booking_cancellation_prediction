@@ -1,0 +1,139 @@
+{
+  "title": "🏨 Hotel Booking Analysis 2024",
+  "subtitle": "Performance analysis and cancellation prediction",
+  
+  "charts": {
+    "monthly_revenue": "📈 Monthly Revenue Evolution",
+    "occupancy": "🌡️ Occupancy Rate per Month",
+    "seasonal": "🍂 Seasonal Performance",
+    "channels": "📱 Booking Channels Comparison",
+    "guest_types": "👥 Guest Type Analysis",
+    "cancellation": "🚫 Cancellation Rate by Channel"
+  },
+  
+  "sections": {
+    "insights": "💡 Key Business Insights",
+    "recommendations": "🎯 Strategic Recommendations"
+  },
+  
+  "kpis": {
+    "revenue": {
+      "label": "Average Revenue",
+      "subtext": "Per period"
+    },
+    "profit": {
+      "label": "Average Profit",
+      "subtext": "margin"
+    },
+    "occupancy": {
+      "label": "Occupancy Rate",
+      "subtext": "Overall average"
+    },
+    "adr": {
+      "label": "Average ADR",
+      "subtext": "Average Daily Rate"
+    },
+    "revpar": {
+      "label": "RevPAR",
+      "subtext": "Revenue per Available Room"
+    },
+    "cancellation": {
+      "label": "Cancellation Rate",
+      "subtext": "Priority to reduce"
+    }
+  },
+  
+  "tooltips": {
+    "adr": "Average Daily Rate (ADR): Average price of a sold room per night. Key indicator of pricing strategy.",
+    "revpar": "Revenue per Available Room (RevPAR): Revenue generated per room, whether occupied or not. Calculated: ADR × Occupancy rate.",
+    "occupancy": "Occupancy Rate: Percentage of occupied rooms relative to total available rooms."
+  },
+  
+  "chart_labels": {
+    "revenue": "Average Revenue (€)",
+    "occupancy": "Occupancy Rate (%)",
+    "profit": "Average Profit (€)",
+    "bookings": "Total Bookings",
+    "cancellation": "Cancellation Rate (%)"
+  },
+  
+  "months": {
+    "short": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+  },
+  
+  "insights": {
+    "performance": {
+      "title": "Overall Performance",
+      "message": "Average revenue of €{revenue} with average profit of €{profit}",
+      "metric": "{margin}% margin"
+    },
+    "occupancy": {
+      "title": "Occupancy Rate",
+      "message": "Average occupancy rate of {rate}%",
+      "metric": "Optimization possible"
+    },
+    "seasonality": {
+      "title": "Seasonality",
+      "message": "{season} is the most profitable season with €{revenue}",
+      "metric": "+€{profit} average profit"
+    },
+    "channel": {
+      "title": "Distribution Channel",
+      "message": "{channel} generates the highest revenue but has a {rate}% cancellation rate",
+      "metric": "{bookings} bookings"
+    },
+    "segment": {
+      "title": "Customer Segment",
+      "message": "Business clients: higher cancellation rate ({rate}%)",
+      "metric": "Action required"
+    }
+  },
+  
+  "recommendations": {
+    "priority": {
+      "high": "HIGH PRIORITY",
+      "medium": "MEDIUM PRIORITY"
+    },
+    "categories": {
+      "revenue_management": "Revenue Management",
+      "cancellation": "Cancellation Management",
+      "marketing": "Marketing",
+      "mix": "Customer Mix"
+    },
+    "items": {
+      "dynamic_pricing": {
+        "title": "Implement dynamic pricing policy based on seasonality",
+        "impact": "5-10% increase in RevPAR",
+        "actions": [
+          "Increase rates during spring (most profitable season)",
+          "Offer targeted promotions in summer to improve occupancy"
+        ]
+      },
+      "reduce_cancellation": {
+        "title": "Reduce cancellation rate from OTA channels and Business clients",
+        "impact": "Recovery of 15-20% of lost revenue",
+        "actions": [
+          "Non-refundable prepayment policy with 10-15% discount",
+          "Specific loyalty program for Business clients",
+          "Proactive communication 48h before arrival"
+        ]
+      },
+      "optimize_marketing": {
+        "title": "Optimize marketing spend by season",
+        "impact": "10-15% reduction in marketing costs",
+        "actions": [
+          "Focus investments on Direct channels (lower cancellation rate)",
+          "Targeted campaigns 2-3 months before low seasons"
+        ]
+      },
+      "rebalance_mix": {
+        "title": "Rebalance Leisure/Business mix",
+        "impact": "Stabilization of occupancy rate",
+        "actions": [
+          "Develop Leisure packages on weekdays",
+          "Partnerships with local businesses for Business clients"
+        ]
+      }
+    }
+  }
+}

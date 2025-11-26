@@ -1,0 +1,139 @@
+{
+  "title": "🏨 Analyse des Réservations Hôtelières 2024",
+  "subtitle": "Analyse des performances et prédiction des cancellations",
+  
+  "charts": {
+    "monthly_revenue": "📈 Évolution Mensuelle des Revenus",
+    "occupancy": "🌡️ Taux d'Occupation par Mois",
+    "seasonal": "🍂 Performance par Saison",
+    "channels": "📱 Comparaison des Canaux de Réservation",
+    "guest_types": "👥 Analyse par Type de Client",
+    "cancellation": "🚫 Taux de Cancellation par Canal"
+  },
+  
+  "sections": {
+    "insights": "💡 Insights Business Clés",
+    "recommendations": "🎯 Recommandations Stratégiques"
+  },
+  
+  "kpis": {
+    "revenue": {
+      "label": "Revenu Moyen",
+      "subtext": "Par période"
+    },
+    "profit": {
+      "label": "Profit Moyen",
+      "subtext": "marge"
+    },
+    "occupancy": {
+      "label": "Taux d'Occupation",
+      "subtext": "Moyenne globale"
+    },
+    "adr": {
+      "label": "ADR Moyen",
+      "subtext": "Average Daily Rate"
+    },
+    "revpar": {
+      "label": "RevPAR",
+      "subtext": "Revenue per Available Room"
+    },
+    "cancellation": {
+      "label": "Taux de Cancellation",
+      "subtext": "À réduire prioritairement"
+    }
+  },
+  
+  "tooltips": {
+    "adr": "Tarif Journalier Moyen (ADR) : Prix moyen d'une chambre vendue par nuitée. Indicateur clé de la stratégie tarifaire.",
+    "revpar": "Revenu par Chambre Disponible (RevPAR) : Revenu généré par chambre, qu'elle soit occupée ou non. Calculé : ADR × Taux d'occupation.",
+    "occupancy": "Taux d'Occupation : Pourcentage de chambres occupées par rapport au nombre total de chambres disponibles."
+  },
+  
+  "chart_labels": {
+    "revenue": "Revenu Moyen (€)",
+    "occupancy": "Taux d'Occupation (%)",
+    "profit": "Profit Moyen (€)",
+    "bookings": "Réservations Totales",
+    "cancellation": "Taux de Cancellation (%)"
+  },
+  
+  "months": {
+    "short": ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août", "Sep", "Oct", "Nov", "Déc"]
+  },
+  
+  "insights": {
+    "performance": {
+      "title": "Performance Globale",
+      "message": "Revenu moyen de {revenue}€ avec un profit moyen de {profit}€",
+      "metric": "{margin}% marge"
+    },
+    "occupancy": {
+      "title": "Taux d'Occupation",
+      "message": "Taux d'occupation moyen de {rate}%",
+      "metric": "Optimisation possible"
+    },
+    "seasonality": {
+      "title": "Saisonnalité",
+      "message": "{season} est la saison la plus rentable avec {revenue}€",
+      "metric": "+{profit}€ profit moyen"
+    },
+    "channel": {
+      "title": "Canal de Distribution",
+      "message": "{channel} génère le plus de revenus mais a un taux de cancellation de {rate}%",
+      "metric": "{bookings} réservations"
+    },
+    "segment": {
+      "title": "Segment Clientèle",
+      "message": "Clients Business: taux de cancellation plus élevé ({rate}%)",
+      "metric": "Action requise"
+    }
+  },
+  
+  "recommendations": {
+    "priority": {
+      "high": "PRIORITÉ HAUTE",
+      "medium": "PRIORITÉ MOYENNE"
+    },
+    "categories": {
+      "revenue_management": "Revenue Management",
+      "cancellation": "Gestion des Cancellations",
+      "marketing": "Marketing",
+      "mix": "Mix Clientèle"
+    },
+    "items": {
+      "dynamic_pricing": {
+        "title": "Implémenter une politique de dynamic pricing basée sur la saisonnalité",
+        "impact": "Augmentation de 5-10% du RevPAR",
+        "actions": [
+          "Augmenter les tarifs durant le printemps (saison la plus rentable)",
+          "Offrir des promotions ciblées en été pour améliorer l'occupation"
+        ]
+      },
+      "reduce_cancellation": {
+        "title": "Réduire le taux de cancellation des canaux OTA et clients Business",
+        "impact": "Récupération de 15-20% de revenus perdus",
+        "actions": [
+          "Politique de prépaiement non remboursable avec 10-15% de réduction",
+          "Programme de fidélité spécifique pour clients Business",
+          "Communication proactive 48h avant l'arrivée"
+        ]
+      },
+      "optimize_marketing": {
+        "title": "Optimiser les dépenses marketing par saison",
+        "impact": "Réduction de 10-15% des coûts marketing",
+        "actions": [
+          "Concentrer les investissements sur les canaux Direct (taux de cancellation plus faible)",
+          "Campagnes ciblées 2-3 mois avant les périodes creuses"
+        ]
+      },
+      "rebalance_mix": {
+        "title": "Rééquilibrer le mix Leisure/Business",
+        "impact": "Stabilisation du taux d'occupation",
+        "actions": [
+          "Développer des packages Leisure en semaine",
+          "Partenariats avec entreprises locales pour clients Business"
+        ]
+      }
+    }
+  }
+}

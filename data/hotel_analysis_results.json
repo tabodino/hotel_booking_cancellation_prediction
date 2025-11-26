@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "analysis_date": "2025-11-26",
+    "dataset": "hotel-revenue-2024.csv",
+    "total_records": 109
+  },
+  "overview": {
+    "total_records": 109,
+    "avg_revenue": 53458.72,
+    "avg_costs": 15463.3,
+    "avg_profit": 37995.41,
+    "avg_occupancy": 77.49,
+    "avg_adr": 124.74,
+    "avg_revpar": 95.29,
+    "avg_cancellation_rate": 58.72
+  },
+  "monthly_trends": [
+    {
+      "month": 1,
+      "avg_revenue": 54193.55,
+      "avg_occupancy": 77.58,
+      "avg_adr": 124.84,
+      "total_marketing": 1850000
+    },
+    {
+      "month": 2,
+      "avg_revenue": 53724.14,
+      "avg_occupancy": 77.97,
+      "avg_adr": 125.86,
+      "total_marketing": 1735000
+    },
+    {
+      "month": 3,
+      "avg_revenue": 54473.68,
+      "avg_occupancy": 77.84,
+      "avg_adr": 125.47,
+      "total_marketing": 1150000
+    },
+    {
+      "month": 7,
+      "avg_revenue": 51800.0,
+      "avg_occupancy": 76.7,
+      "avg_adr": 123.1,
+      "total_marketing": 1800000
+    }
+  ],
+  "seasonal_performance": [
+    {
+      "season": "Spring",
+      "avg_revenue": 54473.68,
+      "avg_occupancy": 77.84,
+      "avg_profit": 40710.53,
+      "count": 19
+    },
+    {
+      "season": "Winter",
+      "avg_revenue": 53966.67,
+      "avg_occupancy": 77.77,
+      "avg_profit": 39841.67,
+      "count": 60
+    },
+    {
+      "season": "Summer",
+      "avg_revenue": 51800.0,
+      "avg_occupancy": 76.7,
+      "avg_profit": 32583.33,
+      "count": 30
+    }
+  ],
+  "booking_channels": [
+    {
+      "channel": "OTA",
+      "avg_revenue": 53723.4,
+      "avg_occupancy": 77.68,
+      "avg_adr": 124.83,
+      "total_bookings": 415,
+      "avg_cancellation_rate": 68.09
+    },
+    {
+      "channel": "Direct",
+      "avg_revenue": 53258.06,
+      "avg_occupancy": 77.34,
+      "avg_adr": 124.68,
+      "total_bookings": 570,
+      "avg_cancellation_rate": 51.61
+    }
+  ],
+  "guest_types": [
+    {
+      "guest_type": "Business",
+      "avg_revenue": 53723.4,
+      "avg_adr": 124.83,
+      "avg_review": 4.57,
+      "total_bookings": 415,
+      "avg_cancellation_rate": 68.09
+    },
+    {
+      "guest_type": "Leisure",
+      "avg_revenue": 53258.06,
+      "avg_adr": 124.68,
+      "avg_review": 4.56,
+      "total_bookings": 570,
+      "avg_cancellation_rate": 51.61
+    }
+  ],
+  "business_insights": [
+    {
+      "title": "Performance Globale",
+      "type": "success",
+      "message": "Revenu moyen de 53,459€ avec un profit moyen de 37,995€",
+      "metric": "71.1% marge"
+    },
+    {
+      "title": "Taux d'Occupation",
+      "type": "info",
+      "message": "Taux d'occupation moyen de 77.5%",
+      "metric": "Optimisation possible"
+    },
+    {
+      "title": "Saisonnalité",
+      "type": "success",
+      "message": "Spring est la saison la plus rentable avec 54,474€",
+      "metric": "+40,711€ profit moyen"
+    },
+    {
+      "title": "Canal de Distribution",
+      "type": "info",
+      "message": "OTA génère le plus de revenus mais a un taux de cancellation de 68.1%",
+      "metric": "415 réservations"
+    },
+    {
+      "title": "Segment Clientèle",
+      "type": "warning",
+      "message": "Clients Business: taux de cancellation plus élevé (68.1%)",
+      "metric": "Action requise"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "high",
+      "category": "Revenue Management",
+      "recommendation": "Implémenter une politique de dynamic pricing basée sur la saisonnalité",
+      "expected_impact": "Augmentation de 5-10% du RevPAR",
+      "actions": [
+        "Augmenter les tarifs durant le printemps (saison la plus rentable)",
+        "Offrir des promotions ciblées en été pour améliorer l'occupation"
+      ]
+    },
+    {
+      "priority": "high",
+      "category": "Gestion des Cancellations",
+      "recommendation": "Réduire le taux de cancellation des canaux OTA et clients Business",
+      "expected_impact": "Récupération de 15-20% de revenus perdus",
+      "actions": [
+        "Politique de prépaiement non remboursable avec 10-15% de réduction",
+        "Programme de fidélité spécifique pour clients Business",
+        "Communication proactive 48h avant l'arrivée"
+      ]
+    },
+    {
+      "priority": "medium",
+      "category": "Marketing",
+      "recommendation": "Optimiser les dépenses marketing par saison",
+      "expected_impact": "Réduction de 10-15% des coûts marketing",
+      "actions": [
+        "Concentrer les investissements sur les canaux Direct (taux de cancellation plus faible)",
+        "Campagnes ciblées 2-3 mois avant les périodes creuses"
+      ]
+    },
+    {
+      "priority": "medium",
+      "category": "Mix Clientèle",
+      "recommendation": "Rééquilibrer le mix Leisure/Business",
+      "expected_impact": "Stabilisation du taux d'occupation",
+      "actions": [
+        "Développer des packages Leisure en semaine",
+        "Partenariats avec entreprises locales pour clients Business"
+      ]
+    }
+  ]
+}

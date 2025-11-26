@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Dashboard d'analyse des réservations hôtelières 2024 avec prédiction des cancellations">
+    <title>Hotel Booking Analysis 2024 - Dashboard</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+</head>
+
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn active" onclick="switchLanguage('fr')" id="btn-fr">🇫🇷 FR</button>
+        <button class="lang-btn" onclick="switchLanguage('en')" id="btn-en">🇬🇧 EN</button>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1 data-i18n="title">🏨 Hotel Booking Analysis 2024</h1>
+            <p class="subtitle" data-i18n="subtitle">Analyse des performances et prédiction des cancellations</p>
+        </header>
+
+        <!-- KPI Cards -->
+        <div id="kpiContainer" class="kpi-grid"></div>
+
+        <!-- Charts Row 1 -->
+        <div class="chart-grid">
+            <div class="chart-container">
+                <h3 class="chart-title" data-i18n="charts.monthly_revenue">📈 Évolution Mensuelle des Revenus</h3>
+                <canvas id="monthlyRevenueChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3 class="chart-title" data-i18n="charts.occupancy">🌡️ Taux d'Occupation par Mois</h3>
+                <canvas id="occupancyChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Charts Row 2 -->
+        <div class="chart-grid">
+            <div class="chart-container">
+                <h3 class="chart-title" data-i18n="charts.seasonal">🍂 Performance par Saison</h3>
+                <canvas id="seasonalChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3 class="chart-title" data-i18n="charts.channels">📱 Comparaison des Canaux de Réservation</h3>
+                <canvas id="channelsChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Charts Row 3 -->
+        <div class="chart-grid">
+            <div class="chart-container">
+                <h3 class="chart-title" data-i18n="charts.guest_types">👥 Analyse par Type de Client</h3>
+                <canvas id="guestTypesChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3 class="chart-title" data-i18n="charts.cancellation">🚫 Taux de Cancellation par Canal</h3>
+                <canvas id="cancellationChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Insights Section -->
+        <div class="insights-section">
+            <h2 class="section-title" data-i18n="sections.insights">💡 Insights Business Clés</h2>
+            <div id="insightsContainer"></div>
+        </div>
+
+        <!-- Recommendations Section -->
+        <div class="recommendations">
+            <h2 class="section-title" data-i18n="sections.recommendations">🎯 Recommandations Stratégiques</h2>
+            <div id="recommendationsContainer"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript Modules -->
+    <script src="./js/i18n.js"></script>
+    <script src="./js/charts.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
