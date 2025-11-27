@@ -110,6 +110,18 @@ pip install -r requirements.txt
 
 ### Scripts
 
+Download and preprocess data
+
+```bash
+python src/data/data_preprocessor.py
+```
+
+Launch MLflow UI
+
+```bash
+mlflow ui
+```
+
 Generate JSON report 
 
 ```bash
@@ -127,3 +139,24 @@ python -m http.server 8000
 ## 📝 License
 
 This project is under MIT license. See `LICENSE` file for more details.
+
+
+---
+
+## 👤 Author
+
+**Jean-Michel LIEVIN**  
+Data Scientist | Full-Stack Developer
+
+- 🌐 Portfolio: [github.com/tabodino](https://github.com/tabodino)
+- 💼 LinkedIn: [linkedin.com/in/jean-michel-lievin-247591143](https://www.linkedin.com/in/jean-michel-lievin-247591143)
+- 📧 Email: [jeanmichel.liev1@gmail.com](mailto:jeanmichel.liev1@gmail.com)
+
+---
+
+## 🛠️ Support
+
+For issues and questions, open an issue on GitHub.
+
+[![Support Email](https://img.shields.io/badge/support-email-blue?logo=gmail)](mailto:jeanmichel.liev1@gmail.com)
+[![Open an Issue](https://img.shields.io/badge/GitHub-Issues-blue?logo=github)](https://github.com/tabodino/hotel_booking_cancellation_prediction/issues)
